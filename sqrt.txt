@@ -1,0 +1,6 @@
+def squareroot(n):
+    for i in range(n):
+        if i*i == n:
+            return i
+    return 'sqrt not possible'
+squareroot(81)

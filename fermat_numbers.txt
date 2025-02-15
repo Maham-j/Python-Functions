@@ -1,0 +1,6 @@
+def fermat_numbers(n):
+    for n in range(n):
+        f = 2**2**n +1
+        print(f)
+
+fermat_numbers(7)

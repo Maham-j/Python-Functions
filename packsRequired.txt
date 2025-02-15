@@ -1,0 +1,12 @@
+def packs_required(pack):
+    
+    eggs = int(input())
+    packs = eggs//pack
+    remains = eggs%pack
+    if remains > 0:
+        packs += 1
+        print(packs)
+    else:
+        print(packs)
+        
+packs_required(6)

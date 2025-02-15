@@ -1,0 +1,16 @@
+def cipher(s, n):
+    x = ''
+    for i in s:
+        if i.islower():  # Check if the character is lowercase
+            a = ord('a')
+            shifted = (ord(i) - a + n) % 26 + a
+            x += chr(shifted)
+        elif i.isupper():  # Check if the character is uppercase
+            a = ord('A')
+            shifted = (ord(i) - a + n) % 26 + a
+            x += chr(shifted)
+        else:
+            x += i  # If the character is not a letter, keep it unchanged
+    print(x)
+
+cipher('xyz', 2)

@@ -1,0 +1,12 @@
+def lower(s):
+    
+    r = ''
+    for i in range(len(s)):
+        if s[i] >= 'A' and s[i] <= 'Z':
+            r += chr(ord(s[i])-ord('A')+ord('a'))
+        else:
+            r += s[i]
+    return r
+
+result = lower('MAHAM')
+print(result)

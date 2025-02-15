@@ -1,0 +1,7 @@
+def second_max(n):
+    
+    maxi = max(n)
+    n.remove(maxi)
+    return max(n)
+
+second_max([1,5,-7,19,4,-2])

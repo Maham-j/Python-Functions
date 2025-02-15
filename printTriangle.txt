@@ -1,0 +1,7 @@
+def printTriangle(r):
+    for i in range(1,r):
+        for j in range(i):
+            print('@',end='')
+        print()
+    
+printTriangle(8)    

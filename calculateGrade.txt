@@ -1,0 +1,44 @@
+def calculate_grade(score):
+    if score >= 85:
+        return 'A'
+    elif score >= 80:
+        return 'A'
+    elif score >= 75:
+        return 'B+'
+    elif score >= 70:
+        return 'B'
+    elif score >= 65:
+        return 'B-'
+    elif score >= 61:
+        return 'C+'
+    elif score >= 58:
+        return 'C'
+    elif score >= 55:
+        return 'C-'
+    elif score >= 50:
+        return 'D'
+    else:
+        return 'F'
+
+def grade1(marks1):
+    return calculate_grade(marks1)
+
+def grade2(marks2):
+    return calculate_grade(marks2)
+
+
+marks1 = int(input())
+marks2 = int(input())
+
+grade_1 = grade1(marks1) 
+grade_2 = grade2(marks2) 
+
+
+if grade_1 == grade_2:
+    print('same grades')
+else:
+    print('different grades')
+
+
+
+    

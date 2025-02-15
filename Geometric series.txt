@@ -1,0 +1,11 @@
+def geometric_series(a1,r,n):
+     
+    s = a1*((1-r**n)/(1-r))
+    print(s)
+    
+    
+a1 = 1
+r = -3
+n = 6
+
+geometric_series(a1,r,n)
